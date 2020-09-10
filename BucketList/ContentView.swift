@@ -6,55 +6,58 @@
 //  Copyright © 2020 Chloe Fermanis. All rights reserved.
 //
 
+import MapKit
 import SwiftUI
 
-struct LoadingView: View {
-    var body: some View {
-        Text("Loading...")
-    }
-}
-
-struct SuccessView: View {
-    var body: some View {
-        Text("Success!")
-    }
-}
-
-struct FailedView: View {
-    var body: some View {
-        Text("Failed.")
-    }
-}
-
 struct ContentView: View {
-    
-    enum LoadingState {
-        case loading, success, failed
-    }
-    
-    var loadingState = LoadingState.loading
+        
+    @State private var centerCoordinate = CLLocationCoordinate2D()
+    @State private var locations = [MKPointAnnotation]()
+    @State private var selectedPlace: MKPointAnnotation?
+    @State private var showingPlaceDetails = false
 
+    
     var body: some View {
         
-        Group {
+        ZStack {
+            MapView(centerCoordinate: $centerCoordinate, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails, annotations: locations)
+                .edgesIgnoringSafeArea(.all)
+            Circle()
+                .fill(Color.blue)
+                .opacity(0.3)
+                .frame(width: 32, height: 32)
             
-            if loadingState == .loading {
-                LoadingView()
-            } else if loadingState == .success {
-                SuccessView()
-            } else if loadingState == .failed {
-                FailedView()
+            VStack {
+            
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        // create a new location
+                        let newLocation = MKPointAnnotation()
+                        newLocation.title = "Example Location  "
+                        newLocation.coordinate = self.centerCoordinate
+                        self.locations.append(newLocation)
+                    }) {
+                        Image(systemName: "plus")
+                    }
+                    .padding()
+                    .background(Color.black.opacity(0.75))
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .clipShape(Circle())
+                    .padding(.trailing)
+                }
             }
+        }
+        .alert(isPresented: $showingPlaceDetails) {
+            Alert(title: Text(selectedPlace?.title ?? "Unknown"), message: Text(selectedPlace?.subtitle ?? "Missing place information."), primaryButton: .default(Text("OK")), secondaryButton: .default(Text("Edit")) {
+                
+                })
         }
         
     }
 }
-//        Text("Hello, World!")
-//            .onTapGesture {
-//                FileManager.findDirectory(str: "Test Message", name: "message.txt")
-//            }
-//        }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
