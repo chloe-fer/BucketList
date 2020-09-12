@@ -14,6 +14,9 @@
 		175944C12505F508003C730F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175944C02505F508003C730F /* Assets.xcassets */; };
 		175944C42505F508003C730F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175944C32505F508003C730F /* Preview Assets.xcassets */; };
 		175944C72505F508003C730F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175944C52505F508003C730F /* LaunchScreen.storyboard */; };
+		179E1BA4250B5214007F572B /* MKPointAnnotation-ObserableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E1BA3250B5214007F572B /* MKPointAnnotation-ObserableObject.swift */; };
+		179E1BA6250B534E007F572B /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E1BA5250B534E007F572B /* EditView.swift */; };
+		179E1BA8250B56CE007F572B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E1BA7250B56CE007F572B /* Result.swift */; };
 		17C5CD732508C3BD005803EE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C5CD722508C3BD005803EE /* MapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		175944C32505F508003C730F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		175944C62505F508003C730F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		175944C82505F508003C730F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		179E1BA3250B5214007F572B /* MKPointAnnotation-ObserableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObserableObject.swift"; sourceTree = "<group>"; };
+		179E1BA5250B534E007F572B /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		179E1BA7250B56CE007F572B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		17C5CD722508C3BD005803EE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +69,10 @@
 				175944B72505F504003C730F /* AppDelegate.swift */,
 				175944B92505F504003C730F /* SceneDelegate.swift */,
 				175944BE2505F504003C730F /* ContentView.swift */,
+				179E1BA7250B56CE007F572B /* Result.swift */,
 				17C5CD722508C3BD005803EE /* MapView.swift */,
+				179E1BA3250B5214007F572B /* MKPointAnnotation-ObserableObject.swift */,
+				179E1BA5250B534E007F572B /* EditView.swift */,
 				175944C02505F508003C730F /* Assets.xcassets */,
 				175944C52505F508003C730F /* LaunchScreen.storyboard */,
 				175944C82505F508003C730F /* Info.plist */,
@@ -154,7 +163,10 @@
 			files = (
 				175944B82505F504003C730F /* AppDelegate.swift in Sources */,
 				175944BD2505F504003C730F /* BucketList.xcdatamodeld in Sources */,
+				179E1BA8250B56CE007F572B /* Result.swift in Sources */,
+				179E1BA4250B5214007F572B /* MKPointAnnotation-ObserableObject.swift in Sources */,
 				17C5CD732508C3BD005803EE /* MapView.swift in Sources */,
+				179E1BA6250B534E007F572B /* EditView.swift in Sources */,
 				175944BF2505F504003C730F /* ContentView.swift in Sources */,
 				175944BA2505F504003C730F /* SceneDelegate.swift in Sources */,
 			);
