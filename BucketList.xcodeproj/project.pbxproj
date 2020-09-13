@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1703BD58250C9A7E00116190 /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1703BD57250C9A7E00116190 /* MKPointAnnotation-Codable.swift */; };
 		175944B82505F504003C730F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175944B72505F504003C730F /* AppDelegate.swift */; };
 		175944BA2505F504003C730F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175944B92505F504003C730F /* SceneDelegate.swift */; };
 		175944BD2505F504003C730F /* BucketList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 175944BB2505F504003C730F /* BucketList.xcdatamodeld */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1703BD57250C9A7E00116190 /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
 		175944B42505F504003C730F /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		175944B72505F504003C730F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		175944B92505F504003C730F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				175944BE2505F504003C730F /* ContentView.swift */,
 				179E1BA7250B56CE007F572B /* Result.swift */,
 				17C5CD722508C3BD005803EE /* MapView.swift */,
+				1703BD57250C9A7E00116190 /* MKPointAnnotation-Codable.swift */,
 				179E1BA3250B5214007F572B /* MKPointAnnotation-ObserableObject.swift */,
 				179E1BA5250B534E007F572B /* EditView.swift */,
 				175944C02505F508003C730F /* Assets.xcassets */,
@@ -167,6 +170,7 @@
 				179E1BA4250B5214007F572B /* MKPointAnnotation-ObserableObject.swift in Sources */,
 				17C5CD732508C3BD005803EE /* MapView.swift in Sources */,
 				179E1BA6250B534E007F572B /* EditView.swift in Sources */,
+				1703BD58250C9A7E00116190 /* MKPointAnnotation-Codable.swift in Sources */,
 				175944BF2505F504003C730F /* ContentView.swift in Sources */,
 				175944BA2505F504003C730F /* SceneDelegate.swift in Sources */,
 			);
